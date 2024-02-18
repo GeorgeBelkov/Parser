@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.11)
+project(Parser)
+set(CMAKE_CXX_STANDARD 23)
+add_library(parser STATIC src/Parser.cpp)
+add_executable(main main.cpp)
+target_link_libraries(main parser)
